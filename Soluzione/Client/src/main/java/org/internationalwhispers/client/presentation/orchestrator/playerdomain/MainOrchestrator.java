@@ -60,7 +60,7 @@ public class MainOrchestrator {
         }
         catch (ServiceException e) {
             LOGGER.severe("Error retrieving languages: " + e.getMessage());
-            AuthOrchestrator.getInstance().showErrorMessage("An internal error happened when trying to retrieve the list of languages" + e.getMessage());
+            AuthOrchestrator.getInstance().showErrorMessage("An internal error happened when trying to retrieve the list of languages: " + e.getMessage().toLowerCase());
         }
     }
 
