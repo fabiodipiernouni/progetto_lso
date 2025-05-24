@@ -1,0 +1,13 @@
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (1,'Pinco','Di Martino','p.dimartino@studenti.unina.it','835ade9efd997e110f536e721b4d94f3c4a779af6dea770254b9d995e8aa7c18','IT');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (2,'Utente','Uno','utenteuno@studenti.unina.it','a7b73f6e233be8d65ca4f99c784ffbb2195a49b9a80b2ce765dade445b62e1d9','IT');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (3,'Utente','Due','utentedue@studenti.unina.it','168b8bcf6bd93789db2eef345140204b25e129a52ca7466401f6ec05807c16c1','EN-GB');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (4,'Utente','Tre','utentetre@studenti.unina.it','4323e64926264bb97f9b3c29ab307cc6cb96a0bab04726f7e96c2d1c68097f90','FR');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (5,'Utente','Quattro','utentequattro@studenti.unina.it','c8b3ba11af0bd5b6618287228031ac11b0b1bd8dbbafa956d82282cdeeac467a','ES');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (6,'Utente','Cinque','utentecinque@studenti.unina.it','e9cd47e1a2040ba131c4ee412b9d37ce71d9cfc5a309b902cbc753e5e2d4fde8','IT');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (7,'Utente','Sei','utentesei@studenti.unina.it','04065099e63fd1be9c66a41ed4ad52409199c6757fd7c9392a9afba10237bba3','EN-US');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (8,'Utente','Sette','utentesette@studenti.unina.it','48e3f1b83b311376e45fbf67bc16bc0463393277ebfa3858cd345dc1b4f5b6bd','ES');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (9,'Utente','Otto','utenteotto@studenti.unina.it','2b682e87a2f229431772130ba7f7739505609b95203c390f045b8024ff98df9d','FR');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (10,'Utente','Nove','utentenove@studenti.unina.it','bbc3b17523764459d0ad5ebb13608222d35eb09cb2517691a6058865cb36e2bb','IT');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (11,'Utente','Dieci','utentedieci@studenti.unina.it','b5508bc2ade2314fcb2f477cc0eed36cea183fd2257f1d9c016660254f106f31','EN-GB');
+INSERT INTO utente (id_utente,nome,cognome,email,password,codice_lingua) VALUES (12,'Utente','Undici','utenteundici@studenti.unina.it','23a8af09e6c600fc831aca2fffccb831dfbba25f9b21a9098aacf2e911cdd9b3','FR');
+commit;

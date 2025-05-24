@@ -1,0 +1,1 @@
+inserite qui il wallet per l'accesso ad Oracle Cloud

@@ -1,0 +1,11 @@
+socket:
+  port: 5500
+log:
+    level: "DEBUG"
+    pattern: "%d{%Y-%m-%d %H:%M:%S} %-5p %c - %m%n"
+    filename: "translator_srv.log"
+    enableFile: true
+    enableConsole: true
+deepl:
+  auth_key: "inserire_deepl_auth_key"
+  base_url: "https://api-free.deepl.com/v2"

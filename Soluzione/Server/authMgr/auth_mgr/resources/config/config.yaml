@@ -1,0 +1,13 @@
+database:
+  username: "inserire_db_user"
+  password: "inserire_db_pwd"
+  dbname: "inserire_db_name"
+  tns_admin: "/usr/local/instantclient/network/admin"
+socket:
+  port: 5000
+log:
+    level: "DEBUG"
+    pattern: "%d{%Y-%m-%d %H:%M:%S} %-5p %c - %m%n"
+    filename: "auth_mgr.log"
+    enableFile: true
+    enableConsole: true

@@ -1,0 +1,47 @@
+#ifndef PRJ_SERVICE_SERVICE_H_
+#define PRJ_SERVICE_SERVICE_H_
+
+#include <cjson/cJSON.h>
+
+#define SUCCESS 0
+#define NO_DATA_FOUND 1
+#define FAILURE 2
+#define EXIT_COMMAND -11
+
+#define USER_ALREADY_SET -12
+#define USER_NOT_SET -13
+
+//Validations
+
+#define INVALID_JSON -10
+#define EMPTY_FIELD -14
+#define MISSING_FIELD -15
+#define INVALID_FIELD_TYPE -16
+#define INVALID_FIELD_VALUE -17
+
+#define INVALID_FORMAT -21
+#define INVALID_FIELD_LENGTH -22
+
+#define ROOM_LIMIT_REACHED -23
+#define ROOM_NAME_TAKEN -24
+
+#define ROOM_NOT_FOUND -25
+#define QUEUE_FULL -26
+#define USER_ALREADY_IN_ROOM -27
+#define USER_NOT_IN_ROOM -28
+
+#define USER_NOT_HOST -29
+#define GAME_ALREADY_STARTED -30
+#define GAME_ALREADY_TERMINATED -37
+#define NOT_ENOUGH_PLAYERS -31
+
+#define NO_PLAYERS_AVAILABLE -36
+#define NOT_PLAYER_TURN -32
+#define GAME_NOT_STARTED -33
+#define USER_ALREADY_SENT_MESSAGE -34
+
+#define USER_SET_BY_ANOTHER_CLIENT -35
+
+void get_invalid_room_name_msg(int res, char cause[]);
+
+#endif //PRJ_SERVICE_SERVICE_H_

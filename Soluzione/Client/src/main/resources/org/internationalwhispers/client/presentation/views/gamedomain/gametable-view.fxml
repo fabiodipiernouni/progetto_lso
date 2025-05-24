@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<StackPane fx:id="pane" prefHeight="600.0" prefWidth="600.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.internationalwhispers.client.presentation.controller.gamedomain.GameTableController">
+    <BorderPane>
+        <top>
+            <HBox alignment="CENTER" spacing="5">
+                <Label fx:id="roomNameLabel" styleClass="subheader" text="Room Name" wrapText="true" />
+
+                <Label fx:id="playerCount" styleClass="subheader" text="1/10 (need 3 more)" wrapText="true" />
+            </HBox>
+        </top>
+        <center>
+            <GridPane fx:id="gameTableGrid" styleClass="game-table" alignment="CENTER" hgap="15" vgap="15">
+                <BorderPane.margin>
+                    <Insets top="5" bottom="5" left="5" right="5"/>
+                </BorderPane.margin>
+                <StackPane styleClass="direction-arrow"
+                           GridPane.columnIndex="1" GridPane.rowIndex="1"
+                           GridPane.columnSpan="2" GridPane.rowSpan="3">
+                    <Label fx:id="directionArrow" text="⟳" styleClass="arrow-icon"/>
+                </StackPane>
+                <!-- Definizione delle dimensioni delle colonne -->
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="25" />
+                    <ColumnConstraints percentWidth="25" />
+                    <ColumnConstraints percentWidth="25" />
+                    <ColumnConstraints percentWidth="25" />
+                </columnConstraints>
+                <!-- Definizione delle dimensioni delle righe -->
+                <rowConstraints>
+                    <RowConstraints percentHeight="20" />
+                    <RowConstraints percentHeight="20" />
+                    <RowConstraints percentHeight="20" />
+                    <RowConstraints percentHeight="20" />
+                    <RowConstraints percentHeight="20" />
+                </rowConstraints>
+
+                <!-- Prima riga: X Y Y X -->
+                <HBox id="slot0" styleClass="player-box" GridPane.columnIndex="1" GridPane.rowIndex="0" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+                <HBox id="slot1" styleClass="player-box" GridPane.columnIndex="2" GridPane.rowIndex="0" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+
+                <!-- Seconda riga: Y X X Y -->
+                <HBox id="slot9" styleClass="player-box" GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+                <HBox id="slot2" styleClass="player-box" GridPane.columnIndex="3" GridPane.rowIndex="1" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+
+                <!-- Terza riga: Y X X Y -->
+                <HBox id="slot8" styleClass="player-box" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+                <HBox id="slot3" styleClass="player-box" GridPane.columnIndex="3" GridPane.rowIndex="2" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+
+                <!-- Quarta riga: Y X X Y -->
+                <HBox id="slot7" styleClass="player-box" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+                <HBox id="slot4" styleClass="player-box" GridPane.columnIndex="3" GridPane.rowIndex="3" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+
+                <!-- Quinta riga: X Y Y X -->
+                <HBox id="slot6" styleClass="player-box" GridPane.columnIndex="1" GridPane.rowIndex="4" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+                <HBox id="slot5" styleClass="player-box" GridPane.columnIndex="2" GridPane.rowIndex="4" alignment="CENTER">
+                    <VBox>
+                        <Label text="Empty slot"/>
+                        <Label/>
+                        <Label styleClass="player-info"/>
+                    </VBox>
+                    <ImageView styleClass="player-flag"/>
+                </HBox>
+            </GridPane>
+        </center>
+        <bottom>
+            <HBox alignment="CENTER" spacing="10">
+                <BorderPane.margin>
+                    <Insets bottom="5"/>
+                </BorderPane.margin>
+                <Button text="Start" fx:id="startButton" onAction="#onStartButtonClick" styleClass="start-button"/>
+                <TextField fx:id="currentMessageField" promptText="You're the first to talk" editable="false" styleClass="input-field"/>
+                <TextField fx:id="messageField" promptText="Add something to the message..." styleClass="input-field"/>
+                <Button text="Send" fx:id="sendButton" onAction="#onSendButtonClick" styleClass="send-button"/>
+                <Button onAction="#onLeaveButtonClick" styleClass="leave-button" text="Leave" />
+            </HBox>
+        </bottom>
+    </BorderPane>
+</StackPane>

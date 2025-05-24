@@ -1,0 +1,24 @@
+#ifndef PRJ_SERVICE_SERVICE_H_
+#define PRJ_SERVICE_SERVICE_H_
+
+#define MAX_MESSAGE_SIZE 1024
+
+#define SUCCESS 0
+#define NO_DATA_FOUND 1
+#define FAILURE 2
+#define EXIT_COMMAND -11
+
+// Validations
+
+#define INVALID_JSON -10
+#define EMPTY_FIELD -14
+#define MISSING_FIELD -15
+#define INVALID_FIELD_TYPE -16
+
+#define INVALID_FORMAT -21
+
+#define WRONG_LANGUAGE_CODE -22
+
+
+
+#endif //PRJ_SERVICE_SERVICE_H_

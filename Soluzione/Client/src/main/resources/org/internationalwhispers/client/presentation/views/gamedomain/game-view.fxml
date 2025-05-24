@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane prefHeight="500.0" prefWidth="700.0" stylesheets="@../../css/style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.14-internal" fx:controller="org.internationalwhispers.client.presentation.controller.gamedomain.GameController">
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER" styleClass="tool-bar">
+            <Button mnemonicParsing="false" text="Logout" onAction="#onLogoutButtonClick" styleClass="logout-button"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Label fx:id="playerNameLabel" text="Player Name" styleClass="player-name"/>
+            <ImageView fx:id="playerFlagImageView" fitHeight="30.0" fitWidth="30.0" preserveRatio="true" styleClass="player-flag"/>
+        </ToolBar>
+    </top>
+    <center>
+        <StackPane fx:id="contentPane" prefHeight="410.0" prefWidth="700.0">
+            <!-- This is where the actual page will be injected -->
+        </StackPane>
+    </center>
+</BorderPane>

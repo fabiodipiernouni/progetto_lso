@@ -1,0 +1,10 @@
+server:
+  authMgr:
+    host: localhost
+    port: 5000
+  gameRulesMgr:
+    host: localhost
+    port: 5001
+  translatorSrv:
+    host: localhost
+    port: 5500

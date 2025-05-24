@@ -1,0 +1,48 @@
+services:
+  translator_srv:
+    build:
+      context: ./translatorSrv/translator_srv
+    environment:
+      - PORT=5500
+    expose:
+      - 5500
+    ports:
+      - 5500:5500
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    networks:
+      - my_network
+  auth_mgr:
+    build:
+      context: ./authMgr/auth_mgr
+    environment:
+      - PORT=5000
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    networks:
+      - my_network
+  game_rules_mgr:
+    build:
+      context: ./gameRulesMgr/game_rules_mgr
+    environment:
+      - PORT=5001
+    expose:
+      - 5001
+    ports:
+      - 5001:5001
+    depends_on:
+      - auth_mgr
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    networks:
+      - my_network
+networks:
+  my_network:
+    driver: bridge

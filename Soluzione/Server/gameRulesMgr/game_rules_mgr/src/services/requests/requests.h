@@ -1,0 +1,6 @@
+#ifndef GAME_RULES_MGR_SRC_SERVICES_REQUESTS_REQUESTS_H
+#define GAME_RULES_MGR_SRC_SERVICES_REQUESTS_REQUESTS_H
+
+int create_refresh_room_request(int indice_stanza, char request[]);
+
+#endif //GAME_RULES_MGR_SRC_SERVICES_REQUESTS_REQUESTS_H

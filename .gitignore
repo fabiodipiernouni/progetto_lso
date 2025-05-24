@@ -1,0 +1,9 @@
+.vscode/
+.idea/
+./Soluzione/Server/translatorSrvExample
+*.log
+CMakeLists.txt
+cmake-build-debug
+*.mvn
+mvnw
+mvnw.cmd

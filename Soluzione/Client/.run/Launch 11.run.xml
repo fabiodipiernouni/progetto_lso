@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Launch 11" type="CompoundRunConfigurationType">
+    <toRun name="Utente Cinque" type="Application" />
+    <toRun name="Utente Dieci" type="Application" />
+    <toRun name="Utente Due" type="Application" />
+    <toRun name="Utente Nove" type="Application" />
+    <toRun name="Utente Otto" type="Application" />
+    <toRun name="Utente Quattro" type="Application" />
+    <toRun name="Utente Sei" type="Application" />
+    <toRun name="Utente Sette" type="Application" />
+    <toRun name="Utente Tre" type="Application" />
+    <toRun name="Utente Undici" type="Application" />
+    <toRun name="Utente Uno" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>

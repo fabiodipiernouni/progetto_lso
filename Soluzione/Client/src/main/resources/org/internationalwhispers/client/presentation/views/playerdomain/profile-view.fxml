@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="10.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.internationalwhispers.client.presentation.controller.playerdomain.ProfileController">
+    <Label styleClass="header" text="Profile" wrapText="true" />
+    <TextField fx:id="nameField" promptText="Name" styleClass="input-field"/>
+    <TextField fx:id="surnameField" promptText="Surname" styleClass="input-field"/>
+    <TextField fx:id="emailField" promptText="Email" styleClass="input-field"/>
+    <PasswordField fx:id="passwordField" promptText="Password" styleClass="input-field"/>
+    <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" styleClass="input-field"/>
+    <ComboBox promptText="Pick a language" fx:id="languageComboBox" styleClass="input-field"/>
+    <HBox alignment="CENTER">
+        <Button text="Update" onAction="#onUpdateUserButtonClick" styleClass="signup-button"/>
+        <Button text="Back" onAction="#onBackButtonClick" styleClass="back-button"/>
+    </HBox>
+</VBox>

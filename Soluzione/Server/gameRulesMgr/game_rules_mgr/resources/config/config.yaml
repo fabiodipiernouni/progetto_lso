@@ -1,0 +1,11 @@
+socket:
+  port: 5001
+auth_mgr:
+  ip: "auth_mgr"
+  port: 5000
+log:
+    level: "DEBUG"
+    pattern: "%d{%Y-%m-%d %H:%M:%S} %-5p %c - %m%n"
+    filename: "game_rules_mgr.log"
+    enableFile: true
+    enableConsole: true

@@ -1,0 +1,108 @@
+.header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.input-field {
+    -fx-pref-width: 200px;
+    -fx-padding: 10px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.signup-button, .login-button, .create-button, .join-button, .send-button, .start-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.signup-button:hover, .login-button:hover, .create-button:hover, .join-button:hover, .send-button:hover, .start-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.back-button, .leave-button, .logout-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.back-button:hover, .leave-button:hover, .logout-button:hover {
+    -fx-background-color: #e53935;
+}
+
+.error-message {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+}
+
+.tool-bar {
+    -fx-background-color: linear-gradient(to bottom, #3c3b3f, #605c3c);
+    -fx-padding: 10px;
+}
+
+.player-name {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 0 10px;
+}
+
+.player-flag {
+    -fx-padding: 0 10px;
+}
+
+.subheader {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.game-table {
+    -fx-background-color: #1a7e2c;
+    -fx-background-radius: 300;
+    -fx-border-radius: 300;
+    -fx-border-color: #8B4513;
+    -fx-border-width: 15px;
+}
+
+.player-box {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #ccc;
+    -fx-background-radius: 300;
+    -fx-border-radius: 300;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 120px;
+    -fx-alignment: CENTER;
+}
+.player-box-active {
+    -fx-border-color: orange;
+}
+
+.player-box > Label {
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+/* Styles for direction arrow */
+.direction-arrow {
+    -fx-alignment: center;
+}
+
+.arrow-icon {
+    -fx-font-size: 64px;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 3, 0, 0, 0);
+}
+
+.player-info {
+    -fx-font-weight: bold;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="10.0" stylesheets="@../../css/style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.14-internal" fx:controller="org.internationalwhispers.client.presentation.controller.gamedomain.CreateRoomController">
+    <Label styleClass="header" text="Create a room" wrapText="true" />
+    <Label styleClass="subheader" text="Enter the details of the new room..." wrapText="true" />
+    <TextField fx:id="nameField" prefHeight="40.0" prefWidth="265.0" promptText="Name" styleClass="input-field" />
+    <ComboBox fx:id="directionComboBox" promptText="Choose direction" styleClass="input-field">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Clockwise" />
+                <String fx:value="Counterclockwise" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Button text="Create" onAction="#onCreateButtonClick" styleClass="create-button"/>
+    <HBox alignment="CENTER">
+        <Label styleClass="subheader" text="...or" wrapText="true" />
+        <Hyperlink onAction="#pickRoomClick" styleClass="subheader" text="choose an existing room" />
+    </HBox>
+</VBox>

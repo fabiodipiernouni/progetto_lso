@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="10.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.internationalwhispers.client.presentation.controller.gamedomain.PickRoomController">
+    <Label styleClass="header" text="Pick a room" wrapText="true" />
+    <Label styleClass="subheader" text="Choose a room to join..." wrapText="true" />
+    <TableView fx:id="roomTableView" prefHeight="200.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="roomNameColumn" text="Room Name" />
+            <TableColumn fx:id="hostColumn" styleClass="table-column" text="Host" />
+            <TableColumn fx:id="playersColumn" styleClass="table-column" text="Number of Players" />
+            <TableColumn fx:id="statusColumn" styleClass="table-column" text="Status" />
+            <TableColumn fx:id="joinColumn" styleClass="table-column" sortable="false" text="Join" />
+        </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+    </TableView>
+    <HBox alignment="CENTER">
+        <Label styleClass="subheader" text="...or" wrapText="true" />
+        <Hyperlink onAction="#createRoomClick" styleClass="subheader" text="create a new room" />
+    </HBox>
+</VBox>
